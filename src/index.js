@@ -20,7 +20,8 @@ lengthInput.addEventListener('input', () => {
 
 function generatePasswords() {
     
-    copyMessage.style.display = 'none';
+    copyMessage.textContent = 'Click on a password to copy it';
+    copyMessage.style.display = 'block';
     const passwordLength = lengthInput.value;
     
     let password1 = '';
@@ -41,10 +42,10 @@ function generatePasswords() {
 
 display1.addEventListener('click', () => {
     navigator.clipboard.writeText(display1.textContent);
-    copyMessage.style.display = 'block';
+    copyMessage.textContent = 'Password copied to clipboard!';
 });
 
 display2.addEventListener('click', () => {
     navigator.clipboard.writeText(display2.textContent);
-    copyMessage.style.display = 'block';
+   copyMessage.textContent = 'Password copied to clipboard!';
 });
