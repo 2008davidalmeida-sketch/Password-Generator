@@ -87,6 +87,9 @@ body {
   }
 
   .password-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 48px;
     text-align: center;
