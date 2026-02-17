@@ -71,6 +71,10 @@ body {
     font-size: 28px;
   }
 
+  #header h3 {
+    text-align: left;
+  }
+
   button {
     width: 100%;
   }
@@ -79,6 +83,7 @@ body {
     flex-direction: column;
     height: auto;
     padding: 10px;
+    text-align: center;
   }
 
   .password-display {
